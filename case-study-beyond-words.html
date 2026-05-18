@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beyond Words Case Study | Devika Jungare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="case-study-page">
+    <div id="cursor-glow"></div>
+
+    <header class="navbar">
+      <a href="index.html" class="nav-brand">DJ.</a>
+      <div class="nav-actions">
+        <a href="index.html#work" class="back-link">← Back to Projects</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. Project Hero -->
+      <section class="cs-hero" style="position: relative; overflow: hidden; min-height: 90vh; display: flex; align-items: center;">
+        <div class="bw-sound-wave"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+          <h1 class="cs-title reveal-scroll" style="font-size: clamp(4rem, 8vw, 6rem); letter-spacing: -2px; margin-bottom: 1rem;">Beyond Words</h1>
+          <p class="cs-subtitle reveal-scroll delay-1" style="font-size: 1.5rem; max-width: 600px; margin: 0 auto 3rem;">A real-time sound awareness system for hearing-impaired individuals.</p>
+          <div class="cs-hero-image-wrapper reveal-scroll delay-2" style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-border); aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; border-radius: 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.5);">
+            <div style="text-align: center; color: var(--text-secondary);">
+              [Large Premium Mockup Placeholder]<br>
+              <small>App interface & Wearable interacting</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Overview -->
+      <section class="cs-meta section-padding">
+        <div class="container cs-meta-grid bw-glass-card reveal-scroll" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); padding: 4rem;">
+          <div class="meta-item">
+            <h4>Problem</h4>
+            <p style="font-size: 1rem; font-weight: normal; color: var(--text-secondary);">Important environmental sounds are invisible to hearing-impaired individuals.</p>
+          </div>
+          <div class="meta-item">
+            <h4>Goal</h4>
+            <p style="font-size: 1rem; font-weight: normal; color: var(--text-secondary);">Translate critical sounds into tactile and visual feedback in real-time.</p>
+          </div>
+          <div class="meta-item">
+            <h4>My Role</h4>
+            <p>UI/UX Designer, Prototyper</p>
+          </div>
+          <div class="meta-item">
+            <h4>Duration</h4>
+            <p>12 Weeks</p>
+          </div>
+          <div class="meta-item">
+            <h4>Tools Used</h4>
+            <p>Figma, Arduino, React Native</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-content section-padding" style="padding-top: 0;">
+        <div class="container">
+          
+          <!-- 3. Problem Statement -->
+          <div class="cs-block reveal-scroll text-center" style="margin-bottom: 8rem;">
+            <p class="highlight-quote" style="font-size: 2.5rem !important; border: none; padding: 0; margin: 0 auto !important; max-width: 800px; line-height: 1.3;">
+              "What happens when important sounds become invisible?"
+            </p>
+            <p style="margin-top: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+              For hearing-impaired individuals, everyday environments can be stressful due to the inability to perceive auditory cues like fire alarms, approaching vehicles, or doorbells.
+            </p>
+          </div>
+
+          <!-- 4. Research Section -->
+          <div class="cs-block reveal-scroll">
+            <h2>Research & Discovery</h2>
+            <div class="cs-grid-2" style="margin-top: 3rem;">
+              <div class="bw-glass-card" style="padding: 2rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">User Interviews</h3>
+                <p>Conducted interviews with 15 hearing-impaired individuals to understand their daily challenges in public and private spaces.</p>
+              </div>
+              <div class="bw-glass-card" style="padding: 2rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Accessibility Insights</h3>
+                <p>Found that existing solutions are often bulky, expensive, or fail to differentiate between urgent and non-urgent sounds.</p>
+              </div>
+              <div class="bw-glass-card" style="padding: 2rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Real-World Observations</h3>
+                <p>Observed high cognitive load when users navigate busy streets, relying entirely on visual scanning.</p>
+              </div>
+              <div class="bw-glass-card" style="padding: 2rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Secondary Research</h3>
+                <p>Analyzed current wearable tech and haptic feedback patterns to identify gaps in continuous environmental monitoring.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Insight Quotes -->
+          <div class="cs-block reveal-scroll" style="margin: 8rem auto;">
+            <div class="bw-glass-card" style="position: relative; overflow: hidden;">
+              <div style="font-size: 8rem; position: absolute; top: -20px; left: 20px; color: rgba(255,255,255,0.05); font-family: serif; line-height: 1;">"</div>
+              <p style="font-size: 1.5rem; font-style: italic; position: relative; z-index: 1; margin: 0;">I don't just want to know there's a sound. I need to know if it's a car honking at me or just a dog barking in the distance.</p>
+              <div style="margin-top: 1.5rem; color: var(--accent-color); font-weight: 600;">— Research Participant</div>
+            </div>
+          </div>
+
+          <!-- 6. Ideation -->
+          <div class="cs-block reveal-scroll">
+            <h2>Ideation & Concept</h2>
+            <p>Translating sounds into feelings required exploring various haptic patterns and visual representations.</p>
+            <div class="cs-image-placeholder large" style="background: #111; border: 1px dashed var(--surface-border); height: 400px;">
+              [Visual Sketch / Notebook Exploration Placeholder]
+            </div>
+          </div>
+
+          <!-- 7. Final Solution -->
+          <div class="cs-block reveal-scroll text-center" style="margin: 8rem auto;">
+            <h2>The System Flow</h2>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; margin-top: 4rem; flex-wrap: wrap;">
+              <div class="bw-glass-card" style="flex: 1; min-width: 200px; padding: 2rem;">
+                <h3 style="margin-bottom: 1rem;">1. Detect</h3>
+                <p style="font-size: 0.9rem;">Microphone captures ambient sound</p>
+              </div>
+              <div style="color: var(--accent-color); font-size: 2rem;">→</div>
+              <div class="bw-glass-card" style="flex: 1; min-width: 200px; padding: 2rem;">
+                <h3 style="margin-bottom: 1rem;">2. Classify</h3>
+                <p style="font-size: 0.9rem;">AI identifies the sound type</p>
+              </div>
+              <div style="color: var(--accent-color); font-size: 2rem;">→</div>
+              <div class="bw-glass-card" style="flex: 1; min-width: 200px; padding: 2rem;">
+                <h3 style="margin-bottom: 1rem;">3. Alert</h3>
+                <p style="font-size: 0.9rem;">Visual UI + Haptic Vibration</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. App Interface Showcase -->
+          <div class="cs-block reveal-scroll">
+            <h2>App Interface</h2>
+            <p>A clean, accessible dashboard that visualizes the soundscape around the user.</p>
+            <div style="display: flex; gap: 2rem; justify-content: center; margin-top: 4rem; flex-wrap: wrap;">
+              <div class="bw-floating-mockup" style="width: 250px; height: 500px; background: #1a1a24; border: 8px solid #333; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1rem;">
+                [Alert Detection Screen]
+              </div>
+              <div class="bw-floating-mockup" style="width: 250px; height: 500px; background: #1a1a24; border: 8px solid #333; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1rem; animation-delay: 1s;">
+                [Real-time Classification]
+              </div>
+              <div class="bw-floating-mockup" style="width: 250px; height: 500px; background: #1a1a24; border: 8px solid #333; display: flex; align-items: center; justify-content: center; text-align: center; padding: 1rem; animation-delay: 2s;">
+                [Emergency Settings]
+              </div>
+            </div>
+          </div>
+
+          <!-- 9. Wearable Device Section -->
+          <div class="cs-block reveal-scroll" style="margin-top: 8rem; position: relative;">
+            <div class="bw-glow-effect" style="top: 20%; left: 30%;"></div>
+            <div class="bw-glow-effect" style="bottom: 20%; right: 30%; animation-delay: 1s;"></div>
+            <h2>The Wearable Experience</h2>
+            <p>Discrete, comfortable, and intuitive tactile feedback.</p>
+            <div class="cs-image-placeholder large bw-glass-card" style="height: 500px; background: rgba(0,0,0,0.4);">
+              [Premium Haptic Band Visuals Placeholder]
+            </div>
+          </div>
+
+          <!-- 10. Sound Mapping Section -->
+          <div class="cs-block reveal-scroll">
+            <h2>Sound to Haptic Mapping</h2>
+            <div class="bw-glass-card" style="padding: 0; overflow: hidden; margin-top: 3rem;">
+              <table class="bw-mapping-table">
+                <thead>
+                  <tr>
+                    <th>Sound Trigger</th>
+                    <th>Visual Alert</th>
+                    <th>Haptic Pattern</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Fire Alarm</td>
+                    <td><span style="color: #FF4B4B;">Red Flash</span></td>
+                    <td>Rapid, intense vibration</td>
+                  </tr>
+                  <tr>
+                    <td>Car Horn</td>
+                    <td><span style="color: #FFA500;">Orange Pulse</span></td>
+                    <td>Single strong pulse</td>
+                  </tr>
+                  <tr>
+                    <td>Doorbell</td>
+                    <td><span style="color: #4B9FFF;">Blue Wave</span></td>
+                    <td>Two short bursts</td>
+                  </tr>
+                  <tr>
+                    <td>Name Called</td>
+                    <td><span style="color: #4BFF8E;">Green Glow</span></td>
+                    <td>Soft continuous wave</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- 11. Technology Integration -->
+          <div class="cs-block reveal-scroll" style="margin-top: 8rem;">
+            <h2>Under the Hood</h2>
+            <div class="cs-grid-2" style="margin-top: 3rem;">
+              <div style="border-left: 2px solid var(--surface-border); padding-left: 2rem;">
+                <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Hardware</h3>
+                <ul class="cs-list">
+                  <li>Arduino UNO / Nano for prototyping</li>
+                  <li>Coin vibration motors for localized haptics</li>
+                  <li>Bluetooth LE for smartphone syncing</li>
+                </ul>
+              </div>
+              <div style="border-left: 2px solid var(--surface-border); padding-left: 2rem;">
+                <h3 style="margin-bottom: 1rem; font-size: 1.2rem;">Software</h3>
+                <ul class="cs-list">
+                  <li>TensorFlow Lite for audio classification</li>
+                  <li>React Native for cross-platform app</li>
+                  <li>Real-time WebSockets for instant alerts</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- 12. Impact + Future Scope -->
+          <div class="cs-block reveal-scroll" style="margin-top: 8rem;">
+            <h2>Impact & Future</h2>
+            <div class="cs-grid-2" style="margin-top: 3rem;">
+              <div class="bw-glass-card" style="padding: 2.5rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Accessibility Impact</h3>
+                <p>Significantly reduced cognitive load and anxiety for users navigating urban environments independently.</p>
+              </div>
+              <div class="bw-glass-card" style="padding: 2.5rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Future Scalability</h3>
+                <p>Integration with smartwatch OS natively, and personalized AI training for recognizing specific voices (like family members).</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 13. Final Ending -->
+          <div class="cs-block reveal-scroll text-center" style="margin: 12rem auto 8rem;">
+            <h2 style="font-size: clamp(2rem, 5vw, 4rem); background: var(--accent-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+              Designing awareness beyond sound.
+            </h2>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="cs-next-project section-padding">
+        <div class="container text-center">
+          <h2 class="mb-4">Thanks for exploring!</h2>
+          <a href="index.html#work" class="btn btn-primary">Back to All Projects</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-bottom text-center section-padding" style="padding-top: 0;">
+      <p>&copy; 2026 Devika Jungare. Crafted with passion.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

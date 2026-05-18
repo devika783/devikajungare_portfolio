@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metro Accessibility Redesign Case Study | Devika Jungare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="case-study-page">
+    <div id="cursor-glow"></div>
+
+    <header class="navbar">
+      <a href="index.html" class="nav-brand">DJ.</a>
+      <div class="nav-actions">
+        <a href="index.html#work" class="back-link">← Back to Projects</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1. Project Hero -->
+      <section class="cs-hero" style="position: relative; overflow: hidden; min-height: 90vh; display: flex; align-items: center;">
+        <div class="bw-sound-wave" style="opacity: 0.15; background: radial-gradient(circle, rgba(123, 97, 255, 0.15) 0%, transparent 70%);"></div>
+        <div class="container" style="position: relative; z-index: 2;">
+          <h1 class="cs-title reveal-scroll" style="font-size: clamp(3.5rem, 7vw, 6rem); letter-spacing: -2px; margin-bottom: 1rem; line-height: 1.1;">Metro Accessibility Redesign</h1>
+          <p class="cs-subtitle reveal-scroll delay-1" style="font-size: 1.5rem; max-width: 800px; margin: 0 auto 3rem;">Designing safer and more inclusive metro experiences for senior citizens and specially-abled passengers.</p>
+          <div class="cs-hero-image-wrapper reveal-scroll delay-2 bw-glass-card hover-lift" style="aspect-ratio: 16/9; display: flex; align-items: center; justify-content: center; padding: 0; background: linear-gradient(135deg, rgba(123, 97, 255, 0.05), rgba(0,0,0,0.8)); border: 1px solid rgba(123, 97, 255, 0.2);">
+            <div style="text-align: center; color: var(--text-secondary); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column;">
+              <span style="font-size: 1.8rem; font-weight: 600; color: var(--text-primary);">[Premium Transportation Visual]</span>
+              <span style="margin-top: 1rem; color: var(--accent-color);">Industrial & Product Design Showcase</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. Overview Section -->
+      <section class="cs-meta section-padding">
+        <div class="container cs-meta-grid bw-glass-card reveal-scroll" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); padding: 4rem;">
+          <div class="meta-item">
+            <h4 style="color: var(--accent-color);">Problem</h4>
+            <p style="font-size: 1rem; font-weight: normal; color: var(--text-secondary);">Lack of ergonomic support, safety, and stability inside moving metro coaches for vulnerable passengers.</p>
+          </div>
+          <div class="meta-item">
+            <h4 style="color: var(--accent-color);">Goal</h4>
+            <p style="font-size: 1rem; font-weight: normal; color: var(--text-secondary);">Improve accessibility, posture, and grip support using inclusive product interventions.</p>
+          </div>
+          <div class="meta-item">
+            <h4 style="color: var(--accent-color);">My Role</h4>
+            <p>Product Designer, UX Researcher</p>
+          </div>
+          <div class="meta-item">
+            <h4 style="color: var(--accent-color);">Design Focus</h4>
+            <p>Ergonomics & Inclusive Mobility</p>
+          </div>
+          <div class="meta-item">
+            <h4 style="color: var(--accent-color);">Timeline</h4>
+            <p>8 Weeks</p>
+          </div>
+          <div class="meta-item">
+            <h4 style="color: var(--accent-color);">Tools Used</h4>
+            <p>Figma, SolidWorks, User Observation</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-content section-padding" style="padding-top: 0;">
+        <div class="container">
+          
+          <!-- 3. Understanding the Existing Experience -->
+          <div class="cs-block reveal-scroll" style="margin-top: 5rem;">
+            <h2>Understanding the Existing Experience</h2>
+            <p style="margin-bottom: 3rem; font-size: 1.2rem; max-width: 800px; color: var(--text-secondary);">An empathy mapping analysis based on real-world observations of passengers interacting with the current metro infrastructure.</p>
+            
+            <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); margin-bottom: 4rem;">
+              <div class="skill-card reveal-scroll">Overhead handrails</div>
+              <div class="skill-card reveal-scroll delay-1">Priority signage</div>
+              <div class="skill-card reveal-scroll delay-2">Reserved seats</div>
+              <div class="skill-card reveal-scroll delay-3">Window area</div>
+              <div class="skill-card reveal-scroll delay-4">Seating space</div>
+              <div class="skill-card reveal-scroll delay-5">End-of-coach area</div>
+              <div class="skill-card reveal-scroll delay-6">Door area</div>
+              <div class="skill-card reveal-scroll">Bench comfort</div>
+              <div class="skill-card reveal-scroll delay-1">Signage & information</div>
+            </div>
+
+            <div class="cs-grid-2">
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem; border-left: 4px solid var(--accent-color);">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.5rem;">Observation Insights</h3>
+                <ul style="list-style: none; padding: 0; line-height: 2.2; font-size: 1.1rem; color: var(--text-secondary);">
+                  <li><span style="color: var(--accent-color); margin-right: 10px;">⚠</span> Straps are too high for many passengers</li>
+                  <li><span style="color: var(--accent-color); margin-right: 10px;">⚠</span> Hard to balance during sudden brakes</li>
+                  <li><span style="color: var(--accent-color); margin-right: 10px;">⚠</span> Lack of cushioning on seats</li>
+                  <li><span style="color: var(--accent-color); margin-right: 10px;">⚠</span> Isolation & lack of handles near coach ends</li>
+                  <li><span style="color: var(--accent-color); margin-right: 10px;">⚠</span> High physical risk during rush hours</li>
+                  <li><span style="color: var(--accent-color); margin-right: 10px;">⚠</span> Awareness exists, but priority is not always followed</li>
+                </ul>
+              </div>
+              <div class="bw-floating-mockup" style="background: #111; border: 1px solid #333; border-radius: 20px; display: flex; align-items: center; justify-content: center; height: 100%; min-height: 300px;">
+                <span style="color: var(--text-secondary);">[Empathy Map Visual Placeholder]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Accessibility Challenges -->
+          <div class="cs-block reveal-scroll" style="margin-top: 10rem;">
+            <h2>Accessibility Challenges</h2>
+            <div class="cs-grid-2" style="margin-top: 3rem;">
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Stability During Movement</h3>
+                <p>Lack of rigid support structures causes instability during acceleration and braking.</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Limited Physical Support</h3>
+                <p>Absence of armrests makes sitting down and standing up difficult for the elderly.</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Unsafe Standing Posture</h3>
+                <p>Current hanging straps do not offer ergonomic wrist positioning.</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Seating Discomfort</h3>
+                <p>Slippery surfaces and poor back support cause fatigue on longer journeys.</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Poor Grip Accessibility</h3>
+                <p>Handles are often out of reach for people with limited mobility or height.</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem;">
+                <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Public Behavior Issues</h3>
+                <p>Rush-hour crowds often block access to priority areas and support beams.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. User-Centered Research -->
+          <div class="cs-block reveal-scroll" style="margin-top: 10rem;">
+            <h2>User-Centered Research</h2>
+            <p style="margin-bottom: 4rem; font-size: 1.2rem; color: var(--text-secondary);">Analyzing behavioral patterns, accessibility pain points, and inclusive mobility needs.</p>
+            <div class="cs-grid-2" style="gap: 2rem;">
+              <div class="cs-image-placeholder large bw-glass-card hover-lift" style="height: 300px; background: #1a1a24; border: 1px solid #333; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">[Metro Observations]</div>
+              <div class="cs-image-placeholder large bw-glass-card hover-lift" style="height: 300px; background: #1a1a24; border: 1px solid #333; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">[Passenger Movement Analysis]</div>
+              <div class="cs-image-placeholder large bw-glass-card hover-lift" style="height: 300px; background: #1a1a24; border: 1px solid #333; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">[Behavioral Patterns]</div>
+              <div class="cs-image-placeholder large bw-glass-card hover-lift" style="height: 300px; background: #1a1a24; border: 1px solid #333; display: flex; align-items: center; justify-content: center; font-size: 1.2rem;">[Inclusive Mobility Understanding]</div>
+            </div>
+          </div>
+
+          <!-- 6. Problem Statement -->
+          <div class="cs-block reveal-scroll text-center" style="margin: 12rem auto;">
+            <div style="background: rgba(123, 97, 255, 0.05); padding: 6rem 3rem; border-radius: 30px; border: 1px solid rgba(123, 97, 255, 0.15);">
+              <h2 style="font-size: 1.3rem; color: var(--accent-color); text-transform: uppercase; letter-spacing: 3px; margin-bottom: 2.5rem;">The Core Challenge</h2>
+              <p class="highlight-quote" style="font-size: 2.2rem !important; border: none; padding: 0; margin: 0 auto !important; max-width: 900px; line-height: 1.4; font-weight: 300;">
+                “How might we redesign metro seating and support systems to create safer, more stable, and more dignified public transport experiences for elderly and specially-abled passengers?”
+              </p>
+            </div>
+          </div>
+
+          <!-- 7. Final Solution Showcase -->
+          <div class="cs-block reveal-scroll" style="margin-top: 10rem;">
+            <h2 style="text-align: center; font-size: 3.5rem; margin-bottom: 5rem; color: var(--accent-color);">Product Interventions</h2>
+            
+            <!-- Intervention 1 & 2 -->
+            <div class="cs-grid-2" style="margin-bottom: 3rem;">
+              <div class="bw-glass-card hover-lift" style="padding: 3.5rem; position: relative; overflow: hidden; display: flex; flex-direction: column;">
+                <div style="position: absolute; top: -20px; right: -10px; font-size: 12rem; opacity: 0.03; font-weight: 900; line-height: 1;">01</div>
+                <h3 style="color: var(--accent-color); font-size: 2.2rem; margin-bottom: 1.5rem; position: relative; z-index: 1;">Hinged Armrest</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.2rem; line-height: 2.2; color: var(--text-secondary); position: relative; z-index: 1; flex-grow: 1;">
+                  <li>• Embodied release mechanism</li>
+                  <li>• Soft close hydraulics</li>
+                  <li>• Side-mounted support for standing up</li>
+                </ul>
+                <div class="cs-image-placeholder" style="margin-top: 3rem; height: 300px; background: #111; border-radius: 15px; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; border: 1px solid rgba(255,255,255,0.05);">[Armrest Product Render]</div>
+              </div>
+              
+              <div class="bw-glass-card hover-lift" style="padding: 3.5rem; position: relative; overflow: hidden; display: flex; flex-direction: column;">
+                <div style="position: absolute; top: -20px; right: -10px; font-size: 12rem; opacity: 0.03; font-weight: 900; line-height: 1;">02</div>
+                <h3 style="color: var(--accent-color); font-size: 2.2rem; margin-bottom: 1.5rem; position: relative; z-index: 1;">Handle Grip</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.2rem; line-height: 2.2; color: var(--text-secondary); position: relative; z-index: 1; flex-grow: 1;">
+                  <li>• Non-slip silicon grip</li>
+                  <li>• Sweat-resistant material</li>
+                  <li>• Extended vertical support range</li>
+                </ul>
+                <div class="cs-image-placeholder" style="margin-top: 3rem; height: 300px; background: #111; border-radius: 15px; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; border: 1px solid rgba(255,255,255,0.05);">[Handle Grip Render]</div>
+              </div>
+            </div>
+
+            <!-- Intervention 3 & 4 -->
+            <div class="cs-grid-2" style="margin-bottom: 3rem;">
+              <div class="bw-glass-card hover-lift" style="padding: 3.5rem; position: relative; overflow: hidden; display: flex; flex-direction: column;">
+                <div style="position: absolute; top: -20px; right: -10px; font-size: 12rem; opacity: 0.03; font-weight: 900; line-height: 1;">03</div>
+                <h3 style="color: var(--accent-color); font-size: 2.2rem; margin-bottom: 1.5rem; position: relative; z-index: 1;">Recessed Vertical Handle</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.2rem; line-height: 2.2; color: var(--text-secondary); position: relative; z-index: 1; flex-grow: 1;">
+                  <li>• Integrated side-wall support</li>
+                  <li>• Anti-slip recessed grip design</li>
+                  <li>• Low-profile to prevent obstruction</li>
+                </ul>
+                <div class="cs-image-placeholder" style="margin-top: 3rem; height: 300px; background: #111; border-radius: 15px; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; border: 1px solid rgba(255,255,255,0.05);">[Recessed Handle Render]</div>
+              </div>
+              
+              <div class="bw-glass-card hover-lift" style="padding: 3.5rem; position: relative; overflow: hidden; display: flex; flex-direction: column;">
+                <div style="position: absolute; top: -20px; right: -10px; font-size: 12rem; opacity: 0.03; font-weight: 900; line-height: 1;">04</div>
+                <h3 style="color: var(--accent-color); font-size: 2.2rem; margin-bottom: 1.5rem; position: relative; z-index: 1;">Priority Signage</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.2rem; line-height: 2.2; color: var(--text-secondary); position: relative; z-index: 1; flex-grow: 1;">
+                  <li>• High visibility accessible signage</li>
+                  <li>• Universal symbols</li>
+                  <li>• Contrast-compliant colors</li>
+                </ul>
+                <div class="cs-image-placeholder" style="margin-top: 3rem; height: 300px; background: #111; border-radius: 15px; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; border: 1px solid rgba(255,255,255,0.05);">[Priority Signage Mockup]</div>
+              </div>
+            </div>
+
+            <!-- Intervention 5 & 6 -->
+            <div class="cs-grid-2">
+              <div class="bw-glass-card hover-lift" style="padding: 3.5rem; position: relative; overflow: hidden; display: flex; flex-direction: column;">
+                <div style="position: absolute; top: -20px; right: -10px; font-size: 12rem; opacity: 0.03; font-weight: 900; line-height: 1;">05</div>
+                <h3 style="color: var(--accent-color); font-size: 2.2rem; margin-bottom: 1.5rem; position: relative; z-index: 1;">Skid-Resistant Flooring</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.2rem; line-height: 2.2; color: var(--text-secondary); position: relative; z-index: 1; flex-grow: 1;">
+                  <li>• Raised texture flooring</li>
+                  <li>• Anti-slip embossing</li>
+                  <li>• Tactile guidance indicators</li>
+                </ul>
+                <div class="cs-image-placeholder" style="margin-top: 3rem; height: 300px; background: #111; border-radius: 15px; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; border: 1px solid rgba(255,255,255,0.05);">[Flooring Material Detail]</div>
+              </div>
+              
+              <div class="bw-glass-card hover-lift" style="padding: 3.5rem; position: relative; overflow: hidden; display: flex; flex-direction: column;">
+                <div style="position: absolute; top: -20px; right: -10px; font-size: 12rem; opacity: 0.03; font-weight: 900; line-height: 1;">06</div>
+                <h3 style="color: var(--accent-color); font-size: 2.2rem; margin-bottom: 1.5rem; position: relative; z-index: 1;">Seating Redesign</h3>
+                <ul style="list-style: none; padding: 0; font-size: 1.2rem; line-height: 2.2; color: var(--text-secondary); position: relative; z-index: 1; flex-grow: 1;">
+                  <li>• Textured seat surface</li>
+                  <li>• Ergonomic lumbar support</li>
+                  <li>• Reinforced integration points</li>
+                </ul>
+                <div class="cs-image-placeholder" style="margin-top: 3rem; height: 300px; background: #111; border-radius: 15px; display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; border: 1px solid rgba(255,255,255,0.05);">[Seat Render]</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Material & Ergonomic Details -->
+          <div class="cs-block reveal-scroll" style="margin-top: 10rem;">
+            <h2>Material & Ergonomic Details</h2>
+            <div class="cs-image-placeholder large bw-glass-card" style="margin-top: 4rem; height: 500px; display: flex; align-items: center; justify-content: center; flex-direction: column; background: rgba(0,0,0,0.5); border: 1px solid rgba(123, 97, 255, 0.1);">
+               <span style="font-size: 2rem; font-weight: 600; color: var(--accent-color);">[Industrial Spec Sheet Placeholder]</span>
+               <div style="display: flex; gap: 1.5rem; margin-top: 3rem; flex-wrap: wrap; justify-content: center; max-width: 800px;">
+                 <span class="tag" style="background: rgba(123, 97, 255, 0.1); border-color: rgba(123, 97, 255, 0.3); color: var(--accent-color); font-size: 1.1rem; padding: 0.6rem 1.2rem;">Grip Materials</span>
+                 <span class="tag" style="background: rgba(123, 97, 255, 0.1); border-color: rgba(123, 97, 255, 0.3); color: var(--accent-color); font-size: 1.1rem; padding: 0.6rem 1.2rem;">Anti-slip Textures</span>
+                 <span class="tag" style="background: rgba(123, 97, 255, 0.1); border-color: rgba(123, 97, 255, 0.3); color: var(--accent-color); font-size: 1.1rem; padding: 0.6rem 1.2rem;">Reinforced Structures</span>
+                 <span class="tag" style="background: rgba(123, 97, 255, 0.1); border-color: rgba(123, 97, 255, 0.3); color: var(--accent-color); font-size: 1.1rem; padding: 0.6rem 1.2rem;">Ergonomic Measurements</span>
+                 <span class="tag" style="background: rgba(123, 97, 255, 0.1); border-color: rgba(123, 97, 255, 0.3); color: var(--accent-color); font-size: 1.1rem; padding: 0.6rem 1.2rem;">Accessibility Reach</span>
+               </div>
+            </div>
+          </div>
+
+          <!-- 9. Accessibility Design Principles -->
+          <div class="cs-block reveal-scroll" style="margin-top: 10rem;">
+            <h2>Accessibility Design Principles</h2>
+            <div class="skills-grid" style="margin-top: 4rem;">
+              <div class="skill-card reveal-scroll hover-lift" style="padding: 1.8rem; text-align: center; border-bottom: 2px solid var(--accent-color); font-size: 1.1rem;">Stability</div>
+              <div class="skill-card reveal-scroll hover-lift delay-1" style="padding: 1.8rem; text-align: center; border-bottom: 2px solid var(--accent-color); font-size: 1.1rem;">Comfort</div>
+              <div class="skill-card reveal-scroll hover-lift delay-2" style="padding: 1.8rem; text-align: center; border-bottom: 2px solid var(--accent-color); font-size: 1.1rem;">Visibility</div>
+              <div class="skill-card reveal-scroll hover-lift delay-3" style="padding: 1.8rem; text-align: center; border-bottom: 2px solid var(--accent-color); font-size: 1.1rem;">Inclusive Mobility</div>
+              <div class="skill-card reveal-scroll hover-lift delay-4" style="padding: 1.8rem; text-align: center; border-bottom: 2px solid var(--accent-color); font-size: 1.1rem;">Physical Support</div>
+              <div class="skill-card reveal-scroll hover-lift delay-5" style="padding: 1.8rem; text-align: center; border-bottom: 2px solid var(--accent-color); font-size: 1.1rem;">Safety</div>
+              <div class="skill-card reveal-scroll hover-lift delay-6" style="padding: 1.8rem; text-align: center; border-bottom: 2px solid var(--accent-color); font-size: 1.1rem;">Dignity</div>
+              <div class="skill-card reveal-scroll hover-lift delay-7" style="padding: 1.8rem; text-align: center; border-bottom: 2px solid var(--accent-color); font-size: 1.1rem;">Ease of Navigation</div>
+            </div>
+          </div>
+
+          <!-- 10. Experience Impact -->
+          <div class="cs-block reveal-scroll" style="margin-top: 10rem;">
+            <h2>Experience Impact</h2>
+            <div class="cs-grid-2" style="margin-top: 4rem;">
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem; display: flex; align-items: center; gap: 1.5rem; border-left: 3px solid var(--accent-color);">
+                <div style="width: 50px; height: 50px; background: rgba(123, 97, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.5rem; flex-shrink: 0;">✓</div>
+                <p style="margin: 0; font-size: 1.3rem;">Safer movement inside moving coaches</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem; display: flex; align-items: center; gap: 1.5rem; border-left: 3px solid var(--accent-color);">
+                <div style="width: 50px; height: 50px; background: rgba(123, 97, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.5rem; flex-shrink: 0;">✓</div>
+                <p style="margin: 0; font-size: 1.3rem;">Reduced fall risk</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem; display: flex; align-items: center; gap: 1.5rem; border-left: 3px solid var(--accent-color);">
+                <div style="width: 50px; height: 50px; background: rgba(123, 97, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.5rem; flex-shrink: 0;">✓</div>
+                <p style="margin: 0; font-size: 1.3rem;">Improved support during standing</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem; display: flex; align-items: center; gap: 1.5rem; border-left: 3px solid var(--accent-color);">
+                <div style="width: 50px; height: 50px; background: rgba(123, 97, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.5rem; flex-shrink: 0;">✓</div>
+                <p style="margin: 0; font-size: 1.3rem;">Easier accessibility</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem; display: flex; align-items: center; gap: 1.5rem; border-left: 3px solid var(--accent-color);">
+                <div style="width: 50px; height: 50px; background: rgba(123, 97, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.5rem; flex-shrink: 0;">✓</div>
+                <p style="margin: 0; font-size: 1.3rem;">Improved confidence for elderly passengers</p>
+              </div>
+              <div class="bw-glass-card hover-lift" style="padding: 2.5rem; display: flex; align-items: center; gap: 1.5rem; border-left: 3px solid var(--accent-color);">
+                <div style="width: 50px; height: 50px; background: rgba(123, 97, 255, 0.15); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.5rem; flex-shrink: 0;">✓</div>
+                <p style="margin: 0; font-size: 1.3rem;">Better inclusive public transport experience</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 11. Future Scope -->
+          <div class="cs-block reveal-scroll" style="margin-top: 10rem;">
+            <h2>Future Scope</h2>
+            <p style="margin-bottom: 4rem; font-size: 1.2rem; color: var(--text-secondary);">Integrating digital intelligence with physical accessibility.</p>
+            <div class="skills-grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));">
+              <div class="skill-card reveal-scroll" style="padding: 1.5rem;">Smart support handles</div>
+              <div class="skill-card reveal-scroll delay-1" style="padding: 1.5rem;">Sensor-based occupancy</div>
+              <div class="skill-card reveal-scroll delay-2" style="padding: 1.5rem;">Adaptive accessibility lighting</div>
+              <div class="skill-card reveal-scroll delay-3" style="padding: 1.5rem;">Emergency accessibility systems</div>
+              <div class="skill-card reveal-scroll delay-4" style="padding: 1.5rem;">Real-time crowd density support</div>
+            </div>
+          </div>
+
+          <!-- 12. Final Ending Section -->
+          <div class="cs-block reveal-scroll text-center" style="margin: 12rem auto 8rem;">
+            <h2 style="font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 300; color: #fff; line-height: 1.4;">
+              “Accessibility should not feel separate — <br/><span style="color: var(--accent-color); font-weight: 600;">it should feel natural.</span>”
+            </h2>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="cs-next-project section-padding">
+        <div class="container text-center">
+          <h2 class="mb-4">Thanks for exploring!</h2>
+          <a href="index.html#work" class="btn btn-primary" style="font-weight: 600;">Back to All Projects</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-bottom text-center section-padding" style="padding-top: 0;">
+      <p>&copy; 2026 Devika Jungare. Crafted with passion.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

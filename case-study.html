@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case Study | Devika Jungare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css">
+  </head>
+  <body class="case-study-page">
+    <div id="cursor-glow"></div>
+
+    <header class="navbar">
+      <a href="index.html" class="nav-brand">DJ.</a>
+      <div class="nav-actions">
+        <a href="index.html#work" class="back-link">← Back to Projects</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="cs-hero">
+        <div class="container">
+          <h1 class="cs-title reveal-scroll">Voice-Assisted Companion for Alzheimer's Care</h1>
+          <p class="cs-subtitle reveal-scroll delay-1">Designing an emotionally intelligent VUI to support patients and caregivers.</p>
+          <div class="cs-hero-image-wrapper reveal-scroll delay-2" style="background: transparent; padding: 0;">
+            <!-- Remember to crop the bottom text from your image before saving it to your project folder! -->
+            <img src="/hero-banner-cropped.png" alt="Hero Banner" style="width: 100%; height: auto; border-radius: 16px; object-fit: cover;">
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-meta section-padding">
+        <div class="container cs-meta-grid reveal-scroll">
+          <div class="meta-item">
+            <h4>Roles</h4>
+            <p>VUI Designer, UX Researcher, Conversation Designer</p>
+          </div>
+          <div class="meta-item">
+            <h4>Phases</h4>
+            <p>Research, Conversation Flow, IA, Prototyping, Testing</p>
+          </div>
+          <div class="meta-item">
+            <h4>Target Users</h4>
+            <p>Alzheimer's Patients & Caregivers</p>
+          </div>
+          <div class="meta-item">
+            <h4>Platform</h4>
+            <p>Voice-First Interface (VUI)</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cs-content section-padding">
+        <div class="container">
+          
+          <div class="cs-block reveal-scroll">
+            <h2>Understanding the Problem</h2>
+            <img src="/understanding-problem.png" alt="Understanding the Problem" style="width: 100%; border-radius: 12px; margin-bottom: 2rem; object-fit: cover;">
+            <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+              <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                <h3>1. Problem Statement</h3>
+                <p>Alzheimer's patients struggle with traditional digital systems due to cognitive decline, while caregivers face continuous safety monitoring. Existing voice assistants lack emotional and cognitive-safe interactions, creating an opportunity for a voice-first support system.</p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                <h3>2. Design Challenge</h3>
+                <p>How might we design a voice-first system that helps Alzheimer's patients stay calm, oriented, and safe while reducing caregiver monitoring stress?</p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1);">
+                <h3>3. Why Voice?</h3>
+                <p>Voice interaction reduces cognitive effort because it:</p>
+                <ul class="cs-list" style="margin-top: 1rem;">
+                  <li>requires no navigation</li>
+                  <li>feels natural and familiar</li>
+                  <li>supports real-time reassurance</li>
+                  <li>works during confusion or panic</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-block reveal-scroll">
+            <h2>Research Insights</h2>
+            <div class="cs-image-placeholder large" style="margin-bottom: 2rem;">
+              Insert 'Research Insights' Image Here
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+              <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent-color);">
+                <p><strong>Evening hours increase agitation.</strong></p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent-color);">
+                <p><strong>Simple instructions reduce confusion.</strong></p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent-color);">
+                <p><strong>Patients struggle to recall routines and important events.</strong></p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent-color);">
+                <p><strong>Patients often repeat questions due to anxiety.</strong></p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent-color);">
+                <p><strong>Emotional reassurance works better than correction.</strong></p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; border-left: 4px solid var(--accent-color);">
+                <p><strong>Caregivers need alerts, not monitoring systems.</strong></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-block reveal-scroll">
+            <h2>User Personas</h2>
+            <p>Understanding the dual-user ecosystem: The Patient and The Caregiver.</p>
+            <div class="cs-grid-2" style="margin-bottom: 2rem;">
+               <div class="cs-image-placeholder small">Insert 'User Personas (Early-Mid Stage)' Image Here</div>
+               <div class="cs-image-placeholder small">Insert 'User Personas (Mid-Stage)' Image Here</div>
+            </div>
+
+            <h3>Early-Mid Stage Scenario</h3>
+            <div class="cs-grid-2" style="margin-top: 1rem; margin-bottom: 3rem;">
+              <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px;">
+                <h4 style="color: var(--accent-color);">PATIENT-A: Rajesh (68)</h4>
+                <p class="highlight-quote" style="font-size: 1.1rem; padding: 1rem; margin: 1rem 0;">"Sometimes I forget where I am, and it makes me anxious."</p>
+                <ul class="cs-list" style="margin-bottom: 1rem;">
+                  <li><strong>Needs:</strong> Emotional reassurance, familiar routines, gentle reminders</li>
+                  <li><strong>Pain Points:</strong> Forgetfulness, Anxiety, Disorientation</li>
+                </ul>
+                <p><strong>Design Implication:</strong> Voice must be calm, repetitive, and never corrective.</p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px;">
+                <h4 style="color: var(--accent-color);">CAREGIVER-A: (Age 42)</h4>
+                <p class="highlight-quote" style="font-size: 1.1rem; padding: 1rem; margin: 1rem 0;">"I worry constantly about whether they are safe."</p>
+                <ul class="cs-list" style="margin-bottom: 1rem;">
+                  <li><strong>Needs:</strong> Safety alerts, Emotional peace, Remote monitoring</li>
+                  <li><strong>Pain Points:</strong> Constant worry, Burnout, Lack of control</li>
+                </ul>
+                <p><strong>Design Implication:</strong> System should notify only when necessary.</p>
+              </div>
+            </div>
+
+            <h3>Mid-Stage Scenario</h3>
+            <div class="cs-grid-2" style="margin-top: 1rem;">
+              <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px;">
+                <h4 style="color: var(--accent-color);">PATIENT-B: Nitin (74)</h4>
+                <p class="highlight-quote" style="font-size: 1.1rem; padding: 1rem; margin: 1rem 0;">"Sometimes I feel lost, and it scares me."</p>
+                <ul class="cs-list" style="margin-bottom: 1rem;">
+                  <li><strong>Needs:</strong> Strong emotional grounding, step-by-step task guidance, wandering prevention, night-time reassurance</li>
+                  <li><strong>Pain Points:</strong> Frequent confusion, Evening agitation (sundowning), False beliefs or paranoia, Attempting to leave home</li>
+                </ul>
+                <p><strong>Design Implication:</strong> Voice must activate safety mode during evening hours, increase grounding statements, avoid contradiction, and trigger caregiver escalation when risk thresholds are crossed.</p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px;">
+                <h4 style="color: var(--accent-color);">CAREGIVER-B: (Age 46)</h4>
+                <p class="highlight-quote" style="font-size: 1.1rem; padding: 1rem; margin: 1rem 0;">"I'm always worried something might happen when I'm not around."</p>
+                <ul class="cs-list" style="margin-bottom: 1rem;">
+                  <li><strong>Needs:</strong> Real-time safety alerts, Emotional reassurance for father, Routine automation, Reduced monitoring burden</li>
+                  <li><strong>Pain Points:</strong> Fear of wandering incidents, Sleep disruption, Emotional burnout, Balancing job and caregiving</li>
+                </ul>
+                <p><strong>Design Implication:</strong> Send alerts only during high-risk situations to reduce caregiver fatigue.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-block reveal-scroll">
+            <h2>Patient Experience Journey</h2>
+            <p>How Saathi supports patients through moments of confusion, repetition, and disorientation.</p>
+            <div class="cs-image-placeholder large" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+              Insert 'Patient Experience Journey' Image Here
+            </div>
+            
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div style="display: flex; align-items: center; gap: 1.5rem; background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                <div style="min-width: 150px; font-weight: 600;">Confusion</div>
+                <div style="flex: 1;">Patient asks where they are.</div>
+                <div style="flex: 1.5; color: var(--accent-color);">"You are at home. You are safe."</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 1.5rem; background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                <div style="min-width: 150px; font-weight: 600;">Repetition</div>
+                <div style="flex: 1;">Patient repeats the same question.</div>
+                <div style="flex: 1.5; color: var(--accent-color);">Responds calmly with the same answer.</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 1.5rem; background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                <div style="min-width: 150px; font-weight: 600;">Task Confusion</div>
+                <div style="flex: 1;">Patient forgets what they were doing.</div>
+                <div style="flex: 1.5; color: var(--accent-color);">Guides step-by-step.</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 1.5rem; background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                <div style="min-width: 150px; font-weight: 600;">Wandering</div>
+                <div style="flex: 1;">Patient attempts to leave home.</div>
+                <div style="flex: 1.5; color: var(--accent-color);">Provides verbal redirection and alerts caregiver.</div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 1.5rem; background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: 8px;">
+                <div style="min-width: 150px; font-weight: 600;">Night Disorientation</div>
+                <div style="flex: 1;">Patient wakes at night confused.</div>
+                <div style="flex: 1.5; color: var(--accent-color);">Activates whisper mode and reassures.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-block reveal-scroll">
+            <h2>Conversational Design Principles</h2>
+            <p>Designing a voice that heals, guides, and reassures.</p>
+            <div class="cs-image-placeholder large" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+              Insert 'Conversational Design Principles' Image Here
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center;">
+              <span style="background: rgba(255,255,255,0.1); padding: 0.8rem 1.5rem; border-radius: 30px;">Give one instruction at a time.</span>
+              <span style="background: rgba(255,255,255,0.1); padding: 0.8rem 1.5rem; border-radius: 30px;">Use short, simple sentences.</span>
+              <span style="background: rgba(255,255,255,0.1); padding: 0.8rem 1.5rem; border-radius: 30px;">Repeat calmly without frustration.</span>
+              <span style="background: rgba(255,255,255,0.1); padding: 0.8rem 1.5rem; border-radius: 30px;">Validate emotions before correcting.</span>
+              <span style="background: rgba(255,255,255,0.1); padding: 0.8rem 1.5rem; border-radius: 30px;">Avoid directly contradicting the user.</span>
+            </div>
+          </div>
+
+          <div class="cs-block reveal-scroll">
+            <h2>Example Voice Interactions</h2>
+            <p>How Saathi responds to common situations experienced by Alzheimer's patients.</p>
+            <div class="cs-image-placeholder large" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+              Insert 'Example Voice Interactions' Image Here
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+              <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start;">
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem 1.5rem; border-radius: 20px 20px 20px 0;"><strong>Patient:</strong> "Where am I?"</div>
+                <div style="background: var(--accent-color); color: #000; padding: 1rem 1.5rem; border-radius: 20px 20px 0 20px; align-self: flex-end;"><strong>Saathi:</strong> "You are at home. You are safe."</div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start;">
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem 1.5rem; border-radius: 20px 20px 20px 0;"><strong>Patient:</strong> "Where is Neha?"</div>
+                <div style="background: var(--accent-color); color: #000; padding: 1rem 1.5rem; border-radius: 20px 20px 0 20px; align-self: flex-end;"><strong>Saathi:</strong> "Neha is at work. She will return later."</div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start;">
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem 1.5rem; border-radius: 20px 20px 20px 0;"><strong>Patient:</strong> "What was I doing?"</div>
+                <div style="background: var(--accent-color); color: #000; padding: 1rem 1.5rem; border-radius: 20px 20px 0 20px; align-self: flex-end;"><strong>Saathi:</strong> "You were washing your hands. Let's continue."</div>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 0.5rem; align-items: flex-start;">
+                <div style="background: rgba(255,255,255,0.1); padding: 1rem 1.5rem; border-radius: 20px 20px 20px 0;"><strong>Patient:</strong> "I feel confused."</div>
+                <div style="background: var(--accent-color); color: #000; padding: 1rem 1.5rem; border-radius: 20px 20px 0 20px; align-self: flex-end;"><strong>Saathi:</strong> "I am here with you. Everything is okay."</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-block reveal-scroll">
+            <h2>Safety Support & System Limitations</h2>
+            <div class="cs-image-placeholder large" style="margin-bottom: 2rem;">
+              Insert 'Safety Support' Image Here
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 12px; margin-bottom: 2rem;">
+              <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Safety Support</h3>
+              <p>The system <strong>detects risk situations</strong> like wandering and sends <strong>instant alerts</strong> to caregivers, allowing <strong>quick response</strong> without requiring dashboards or continuous monitoring.</p>
+            </div>
+
+            <h3 style="margin-bottom: 1rem;">System Limitations</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3rem;">
+              <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; text-align: center;">
+                <p><strong>Not a medical</strong> diagnostic tool</p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; text-align: center;">
+                <p>Designed for <strong>early-to-mid stage Alzheimer's</strong></p>
+              </div>
+              <div style="background: rgba(255,255,255,0.05); padding: 1.5rem; border-radius: 12px; text-align: center;">
+                <p>Some alerts may be triggered to <strong>prioritize safety</strong></p>
+              </div>
+            </div>
+
+            <h2>Project Reflection</h2>
+            <div style="background: rgba(255,255,255,0.03); padding: 3rem; border-radius: 16px; border-left: 6px solid var(--accent-color); font-size: 1.2rem; font-style: italic; line-height: 1.6;">
+              "This project highlighted the importance of empathetic and predictable voice design for vulnerable users. Voice interaction can provide not only assistance but also emotional comfort and safety."
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="cs-next-project section-padding">
+        <div class="container text-center">
+          <h2 class="mb-4">Thanks for reading!</h2>
+          <a href="index.html#work" class="btn btn-primary">Back to All Projects</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-bottom text-center section-padding">
+      <p>&copy; 2026 Devika Jungare. Crafted with passion.</p>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
