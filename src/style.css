@@ -217,6 +217,11 @@ a {
 [data-theme="light"] .sun-icon { display: block; }
 [data-theme="light"] .moon-icon { display: none; }
 
+.light-mode-img { display: none !important; }
+.dark-mode-img { display: block !important; }
+[data-theme="light"] .light-mode-img { display: block !important; }
+[data-theme="light"] .dark-mode-img { display: none !important; }
+
 .back-link {
   font-family: var(--font-display);
   font-weight: 600;
