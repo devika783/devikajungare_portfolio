@@ -12,14 +12,31 @@
   <body class="loading">
     <div id="cursor-glow"></div>
     <div id="preloader" class="preloader">
-      <div class="loader-content">
-        <span class="loader-text">DEVIKA JUNGARE</span>
-        <div class="loader-bar"><div class="loader-progress"></div></div>
+      <div class="noise-overlay"></div>
+      
+      <!-- Moving Marquee Background Layer -->
+      <div class="marquee-layer layer-huge">
+        <div class="marquee-content fast-left">
+          <span>UI/UX DESIGNER</span><span class="dot">•</span><span>INTERACTION DESIGNER</span><span class="dot">•</span><span>VISUAL THINKER</span><span class="dot">•</span><span>UI/UX DESIGNER</span><span class="dot">•</span><span>INTERACTION DESIGNER</span><span class="dot">•</span><span>VISUAL THINKER</span><span class="dot">•</span>
+        </div>
+      </div>
+
+      <!-- Center Pill Content -->
+      <div class="loader-pill-wrapper">
+        <div class="loader-pill">
+          <span class="pill-text">LOADING</span>
+          <div class="pill-progress-container">
+            <span class="pill-percentage" id="loader-percentage">0%</span>
+            <div class="pill-bar-track">
+              <div class="pill-bar-fill" id="loader-fill"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
     <header class="navbar hero-animate">
-      <div class="nav-brand">DJ.</div>
+      <div class="nav-brand">DJ</div>
       <nav class="nav-links">
         <a href="#about">About</a>
         <a href="#work">Projects</a>
@@ -27,10 +44,7 @@
         <a href="#contact">Contact</a>
       </nav>
       <div class="nav-actions">
-        <button id="theme-toggle" class="theme-btn" aria-label="Toggle Theme">
-          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-        </button>
+
       </div>
     </header>
 
@@ -56,30 +70,41 @@
       </section>
 
       <!-- ABOUT -->
-      <section id="about" class="about-section section-padding">
-        <div class="container">
-          <div class="about-grid">
-            <div class="about-image-wrapper reveal-scroll">
-              <div class="about-image-placeholder">
-                <div class="image-inner">Profile Image Placeholder</div>
-              </div>
+      <section id="about" class="about-section section-padding" style="position: relative; overflow: hidden; margin-top: 2rem;">
+        <div style="position: absolute; top: -100px; right: -100px; width: 500px; height: 500px; background: radial-gradient(circle, rgba(123, 97, 255, 0.08) 0%, transparent 70%); border-radius: 50%; filter: blur(50px); z-index: 0; pointer-events: none;"></div>
+        
+        <div class="container" style="position: relative; z-index: 1; max-width: 900px; margin: 0 auto;">
+          <div class="reveal-scroll" style="margin-bottom: 4rem; display: flex; align-items: center; gap: 1.5rem;">
+            <div style="height: 1px; flex: 1; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15));"></div>
+            <h2 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 6px; color: var(--text-secondary); margin: 0; font-weight: 500;">About Me</h2>
+            <div style="height: 1px; flex: 1; background: linear-gradient(-90deg, transparent, rgba(255,255,255,0.15));"></div>
+          </div>
+          
+          <div class="about-cinematic-content reveal-scroll delay-1" style="font-size: clamp(1.5rem, 3vw, 2.2rem); line-height: 1.5; font-weight: 300; color: var(--text-secondary);">
+            <p style="margin-bottom: 3rem; color: #fff;">
+              “I’m Devika — a UI/UX and interaction designer crafting <span style="color: var(--accent-color); font-weight: 500;">immersive</span>, emotionally-driven digital experiences that balance aesthetics, <span style="color: var(--accent-color); font-weight: 500;">accessibility</span>, and <span style="color: var(--accent-color); font-weight: 500;">storytelling</span>.”
+            </p>
+            
+            <p style="margin-bottom: 2.5rem; font-size: clamp(1.2rem, 2vw, 1.4rem); line-height: 1.8;">
+              My work blends research, spatial thinking, motion, <span style="color: #fff; font-weight: 500;">interaction</span>, and strong <span style="color: #fff; font-weight: 500;">visual systems</span> to create experiences that feel intuitive, human, and memorable. From accessibility-focused systems and immersive cultural installations to speculative interfaces and environment-first narratives, I enjoy designing experiences that go beyond screens and create real <span style="color: #fff; font-weight: 500;">emotion</span>al impact.
+            </p>
+            
+            <p style="margin-bottom: 4rem; font-size: clamp(1.2rem, 2vw, 1.4rem); line-height: 1.8;">
+              I’m deeply drawn towards bold ideas, cinematic presentation, thoughtful interaction, and high-detail execution. I love exploring the space where technology, human behavior, visual storytelling, and experiential design intersect.
+            </p>
+            
+            <div class="bw-glass-card reveal-scroll delay-2" style="padding: 2.5rem; border-left: 3px solid var(--accent-color); margin-bottom: 4rem;">
+              <p style="margin: 0; font-size: 1.1rem; line-height: 1.8; color: var(--text-primary); font-weight: 400;">
+                Currently focused on building immersive interfaces, accessibility-driven systems, interaction-heavy products, and visually rich case studies with strong conceptual depth.
+              </p>
             </div>
-            <div class="about-text-wrapper reveal-scroll delay-1">
-              <h2 class="section-heading">Curious, detail-oriented, and user-focused.</h2>
-              
-              <div class="about-blocks">
-                <div class="about-block" style="grid-column: 1 / -1;">
-                  <h3>Who I am</h3>
-                  <p>Interaction Design student specializing in UI/UX, accessibility, and immersive interaction systems. Experienced in responsive front-end prototyping, user research, and designing human-centered digital experiences using Figma, React-based tools, and interactive technologies. Passionate about accessibility, storytelling, interaction design, and emerging technologies.</p>
-                </div>
-                <div class="about-block" style="grid-column: 1 / -1;">
-                  <h3>Tools I use</h3>
-                  <div class="tool-chips">
-                    <span>Figma</span><span>Framer</span><span>Adobe XD</span><span>Adobe Illustrator</span><span>Canva</span><span>Miro</span><span>Blender</span><span>TensorFlow.js (Basic)</span><span>React (Basic)</span><span>Tailwind CSS (Basic)</span>
-                  </div>
-                </div>
-              </div>
+            
+            <div class="reveal-scroll delay-3" style="display: flex; flex-direction: column; gap: 0.8rem; font-size: clamp(1.6rem, 2.5vw, 2rem); font-weight: 500; font-family: 'Outfit', sans-serif;">
+              <div style="color: rgba(255,255,255,0.3); transition: color 0.4s ease; cursor: default;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.3)'">Always experimenting.</div>
+              <div style="color: rgba(255,255,255,0.6); transition: color 0.4s ease; cursor: default;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.6)'">Always building.</div>
+              <div style="color: var(--accent-color); filter: drop-shadow(0 0 15px rgba(123, 97, 255, 0.4));">Always designing with intent.</div>
             </div>
+            
           </div>
         </div>
       </section>
@@ -95,7 +120,7 @@
           <div class="bento-grid">
             <!-- Project 1: Large -->
             <div class="project-card large-card reveal-scroll">
-              <div class="project-img-wrapper"><div class="img-placeholder bg-gradient-1" style="font-size: 1.5rem;">SoundAware App</div></div>
+              <div class="project-img-wrapper"><img src="/images/soundaware/soundaware_banner.jpg" alt="SoundAware App" style="width: 100%; height: 100%; object-fit: cover; object-position: center;"></div>
               <div class="project-content">
                 <div class="project-tags">
                   <span class="tag">Accessibility</span><span class="tag">Interaction Design</span><span class="tag">Wearable</span>
@@ -108,7 +133,7 @@
 
             <!-- Project 2: Square -->
             <div class="project-card square-card reveal-scroll">
-              <div class="project-img-wrapper"><div class="img-placeholder bg-gradient-2">Saathi VUI</div></div>
+              <div class="project-img-wrapper"><img src="/hero-banner-cropped.png" alt="Saathi VUI" style="width: 100%; height: 100%; object-fit: cover;"></div>
               <div class="project-content">
                 <div class="project-tags">
                   <span class="tag">VUI Design</span><span class="tag">Healthcare</span>
@@ -121,20 +146,20 @@
 
             <!-- Project 3: Square -->
             <div class="project-card square-card reveal-scroll delay-1">
-              <div class="project-img-wrapper"><div class="img-placeholder bg-gradient-3">Image Placeholder</div></div>
+              <div class="project-img-wrapper"><img src="/images/remnants/remnants_banner.jpg" alt="REMNANTS Game Environment" class="img-placeholder" style="width: 100%; height: 100%; object-fit: cover; object-position: center;"></div>
               <div class="project-content">
                 <div class="project-tags">
                   <span class="tag">Game UI</span>
                 </div>
                 <h3 class="project-title">REMNANTS Game Environment</h3>
                 <p class="project-desc">Immersive heads-up display and menu systems for a post-apocalyptic exploration game.</p>
-                <a href="case-study.html" class="btn btn-outline">View Case Study</a>
+                <a href="case-study-remnants.html" class="btn btn-outline">View Case Study</a>
               </div>
             </div>
 
             <!-- Project 4: Horizontal -->
             <div class="project-card horizontal-card reveal-scroll">
-              <div class="project-img-wrapper"><div class="img-placeholder bg-gradient-4" style="font-size: 1.5rem;">Jan Aushadhi GO</div></div>
+              <div class="project-img-wrapper"><img src="/images/jan-aushadhi/modi_banner.png" alt="Jan Aushadhi GO" style="width: 100%; height: 100%; object-fit: cover;"></div>
               <div class="project-content">
                 <div class="project-tags">
                   <span class="tag">UX Research</span><span class="tag">Service Design</span><span class="tag">IoT Kiosk</span>
@@ -147,7 +172,7 @@
 
             <!-- Project 5: Horizontal -->
             <div class="project-card horizontal-card reveal-scroll delay-1">
-              <div class="project-img-wrapper"><div class="img-placeholder bg-gradient-5" style="font-size: 1.5rem;">Metro Accessibility Redesign</div></div>
+              <div class="project-img-wrapper"><img src="/images/metro/metro_accessibility_banner.jpg" alt="Metro Accessibility Redesign" class="img-placeholder" style="width: 100%; height: 100%; object-fit: cover; object-position: center;"></div>
               <div class="project-content">
                 <div class="project-tags">
                   <span class="tag">Accessibility</span><span class="tag">Product Design</span><span class="tag">Transportation</span>
@@ -229,7 +254,6 @@
           <div class="experience-layout">
             <div class="experience-header reveal-scroll">
               <h2 class="section-title">Experience & Education</h2>
-              <a href="#" class="btn btn-primary mt-4">Download Resume</a>
             </div>
             <div class="experience-list reveal-scroll delay-1">
               <div class="exp-item">
@@ -278,7 +302,8 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2026 Devika Jungare. Crafted with passion.</p>
+          <p style="margin-bottom: 0.5rem; color: var(--text-primary); font-weight: 500;">Open for internships, collaborations &amp; creative projects.</p>
+          <p style="color: var(--text-secondary);">&copy; 2026 Devika Jungare. Crafted with passion.</p>
         </div>
       </div>
     </footer>

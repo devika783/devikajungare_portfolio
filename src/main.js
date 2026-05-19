@@ -1,26 +1,75 @@
 import './style.css'
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Cinematic Smooth Scroll for Anchor Links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        
+        // Calculate offset (adjusting for fixed navbar)
+        const navbarHeight = document.querySelector('.navbar') ? document.querySelector('.navbar').offsetHeight : 0;
+        const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+        const startPosition = window.scrollY;
+        const distance = targetPosition - startPosition;
+        const duration = 1400; // Cinematic slow duration (1.4 seconds)
+        let start = null;
+
+        function animation(currentTime) {
+          if (start === null) start = currentTime;
+          const timeElapsed = currentTime - start;
+          
+          // Smooth easing function: easeInOutQuart
+          const progress = timeElapsed / duration;
+          const easeInOutQuart = progress < 0.5
+            ? 8 * progress * progress * progress * progress
+            : 1 - Math.pow(-2 * progress + 2, 4) / 2;
+
+          window.scrollTo(0, startPosition + distance * easeInOutQuart);
+          
+          if (timeElapsed < duration) {
+            requestAnimationFrame(animation);
+          } else {
+            // Update URL hash without jumping
+            history.pushState(null, null, targetId);
+          }
+        }
+        
+        requestAnimationFrame(animation);
+      }
+    });
+  });
+
   // Preloader Logic
   const preloader = document.getElementById('preloader');
-  const loaderProgress = document.querySelector('.loader-progress');
+  const loaderFill = document.getElementById('loader-fill');
+  const loaderPercentage = document.getElementById('loader-percentage');
   
-  if (preloader && loaderProgress) {
+  if (preloader && loaderFill && loaderPercentage) {
     let progress = 0;
-    const duration = 1500; 
+    const duration = 3000; 
     const intervalTime = 20; 
     const step = 100 / (duration / intervalTime);
 
     const loaderInterval = setInterval(() => {
       progress += step;
-      loaderProgress.style.width = `${progress}%`;
+      loaderFill.style.width = `${Math.min(progress, 100)}%`;
+      loaderPercentage.innerText = `${Math.floor(Math.min(progress, 100))}%`;
       
       if (progress >= 100) {
         clearInterval(loaderInterval);
+        
+        const loaderPill = document.querySelector('.loader-pill');
+        if (loaderPill) loaderPill.classList.add('expand');
+
         setTimeout(() => {
           preloader.classList.add('hidden');
           document.body.classList.remove('loading');
-        }, 300);
+        }, 800);
       }
     }, intervalTime);
   } else {
@@ -54,24 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Dark/Light Mode Toggle
-  const themeToggleBtn = document.getElementById('theme-toggle');
-  const htmlElement = document.documentElement;
-  
-  // Check local storage for theme
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) {
-    htmlElement.setAttribute('data-theme', savedTheme);
-  }
 
-  if (themeToggleBtn) {
-    themeToggleBtn.addEventListener('click', () => {
-      const currentTheme = htmlElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      htmlElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('theme', newTheme);
-    });
-  }
 
   // Custom Cursor Glow
   const cursorGlow = document.getElementById('cursor-glow');
