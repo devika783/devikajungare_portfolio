@@ -105,6 +105,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  // Mobile Navigation Menu Toggle
+  const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+  const mobileNav = document.getElementById('mobile-nav');
+  
+  if (mobileNavToggle && mobileNav) {
+    const mobileLinks = mobileNav.querySelectorAll('a');
+    
+    mobileNavToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileNavToggle.classList.toggle('active');
+      mobileNav.classList.toggle('active');
+      document.body.classList.toggle('no-scroll');
+    });
+
+    // Close mobile nav when clicking on a link
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNavToggle.classList.remove('active');
+        mobileNav.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+
+    // Close mobile nav when clicking outside of the menu
+    document.addEventListener('click', (e) => {
+      if (!mobileNav.contains(e.target) && !mobileNavToggle.contains(e.target)) {
+        if (mobileNav.classList.contains('active')) {
+          mobileNavToggle.classList.remove('active');
+          mobileNav.classList.remove('active');
+          document.body.classList.remove('no-scroll');
+        }
+      }
+    });
+  }
+
   // Custom Cursor Glow
   const cursorGlow = document.getElementById('cursor-glow');
   if (cursorGlow) {
